@@ -169,7 +169,56 @@ padding: 0;
     border-radius: 7px;
     color: #00a878;
 }
-/*----------------------------------------- cuadros.html desde acá ----------------------------*/
+/*----------------------------------------- novedades.html desde acá ----------------------------*/
+.publicacion, .agenda_orden{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e5fcf5;
+}
+.publicacion img{ display: block;
+    width: 70%;
+    border-radius: 30px 30px 0 0;
+    margin: auto;
+}
+.publicacion h2, .publicacion h4{
+    text-align: center;
+}
+.publicacion p{
+    width: 70%;
+    margin: auto;
+}
+.agenda_orden ul li{
+    background-color: #ffffff;
+    width: 100%;
+}
+.grid_agenda {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr ; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "fecha_uno fecha_dos"
+      "fecha_tres fecha_cuatro"
+      "fecha_cinco fecha_Seis"
+      "fecha_siete fecha_ocho"; 
+     padding-right: 20px;
+  }
+
+.agenda_orden ul li p{ 
+    margin-bottom: 0;
+}
+.fecha_uno, .fecha_dos, .fecha_tres, .fecha_cuatro, .fecha_cinco, .fecha_seis, .fecha_siete, .fecha_ocho{
+    padding: 15px;
+    color: #1282A2;
+}
+.agenda_orden ul li h4{
+    
+    text-align: center;
+    background-color: #1282A2;
+    color: #ffffff;
+    border-radius: 10px;
+}
+/*----------------------------------------- galeria.html desde acá ----------------------------*/
 .main_galeria{
     background-color: #1283a23d;
 }
@@ -187,4 +236,48 @@ padding: 0;
     background-color: #1282A2;
     border-radius: 20px;
 }
+.main_galeria{
+    padding-top: 20px;
+}
+.main_galeria h3, .main_galeria p{
+    text-align: center;
+}
+
+/*----------------------------------------- historia.html desde acá ----------------------------*/
+.historia{
+    background-color: #edfdef;
+    padding-bottom: 20px;
+}
+.inicio_presente{
+    color: #1282A2;  
+    margin-bottom: 0;
+    padding-left: 0;
+    margin: auto;
+    width: 310px;
+}
+.inicio_presente li{
+    padding-top: 20px;
+    border-radius:  30px 30px 0 0;
+    width: auto;
+}
+.inicio_presente p{
+    margin-bottom: 5px;
+    text-align: end;
+    padding: 0px 15px 5px 0;
+    background-color: #ffffff;
+}
+.inicio_presente li h5{
+    margin-bottom: 0px;
+    text-align: end;
+    padding: 5px 15px 0px 0;
+    background-color: #ffffff;
+}
+.inicio_presente img{
+    width: 310px;
+    border: #00a878 solid 10px;
+    background-color: #00a878;
+    border-radius:  30px 30px 0 0;
+}
+
+
  
