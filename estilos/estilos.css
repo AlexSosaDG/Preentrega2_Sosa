@@ -94,7 +94,7 @@ footer{display: flex;
 }
 .cuadro_principal{
     display: block;
-    height: 400px;
+    width: 350px;
     margin: auto;
     border-radius: 30px 30px 0 0;
 }
@@ -119,12 +119,8 @@ footer{display: flex;
     padding-top: 10px;
 }
 
-.grid_destacados{
-margin: 0;
-padding: 0;
-}
 .uno, .dos, .tres{
-    width: 300px;
+    width: 60%;
     margin-top: 10px;
     margin-bottom: 20px;
     padding: 8px;
@@ -191,6 +187,13 @@ padding: 0;
     background-color: #ffffff;
     width: 100%;
 }
+.agenda_orden h3{
+    color: #00a878;
+    text-align: center;
+    background-color: #69c4dd17;
+    padding: 5px;
+    margin-bottom: 15px;
+}
 .grid_agenda {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -212,7 +215,6 @@ padding: 0;
     color: #1282A2;
 }
 .agenda_orden ul li h4{
-    
     text-align: center;
     background-color: #1282A2;
     color: #ffffff;
@@ -279,5 +281,87 @@ padding: 0;
     border-radius:  30px 30px 0 0;
 }
 
+@media (min-width: 650px) {
+    .cuadros p{
+        width: 80%;
+        margin: auto;
+    }
+    .cuadros a, .detalle_cuadro{
+        padding-left: 10%;
+    }
+    
+    .flex_destacados{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+
+    .flex_a{
+        width: 75%;
+    }
+    .uno{
+        width: 100%;
+    }
+    .flex_b{
+        width: 43%;
+    }
+    .dos, .tres{
+        width: 100%;
+    }
+
+    /*-------------------novedades----------*/
+    .grid_agenda { 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 20px 20px; 
+        grid-template-areas: 
+          "fecha_uno fecha_dos fecha_tres"
+          "fecha_cuatro fecha_cinco fecha_Seis"
+          "fecha_siete fecha_ocho "; 
+      }
+    
+      /*-------------------galedria----------*/
+
+      .galeria_cuadros{
+        width: 90%;
+        columns: 3 200px;
+        column-gap: 20px;
+        padding-bottom: 20px;
+      }
+      .galeria_cuadros li{
+        width: 90%;
+        margin-bottom: 5px;
+        margin-left: auto;
+      }
+      .galeria_cuadros li img{
+       width: 100%;
+      }
+
+      /*-------------------historia------------*/
+
+      .cuadros img{
+        width: 50%;
+      }
+    
+}
+
+@media (min-width: 992px) {
+    
+    .cuadros{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cuadros ul{
+        margin: 0;
+        padding: 0;
+    }
+    .cuadros img{
+        width: 200px;
+        align-items: end;
+    }
+}
 
  
