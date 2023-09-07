@@ -282,6 +282,9 @@ footer{display: flex;
 }
 
 @media (min-width: 650px) {
+    .botones-nav{
+        justify-content: start!important;
+    }
     .cuadros p{
         width: 80%;
         margin: auto;
@@ -352,16 +355,71 @@ footer{display: flex;
     .cuadros{
         display: flex;
         justify-content: center;
+        align-items: end;
+        margin-top: 40px;
     }
     
-    .cuadros ul{
-        margin: 0;
-        padding: 0;
+    .cuadros ul :not(.detalle_cuadro){
+       width: 400px;
+    }
+    .cuadros ul li h3{
+        text-align: left;
+    }
+    .detalle_cuadro{
+        padding-left: 0;
     }
     .cuadros img{
-        width: 200px;
-        align-items: end;
+       width: 300px;
+       margin: 0;
     }
+    .flex_destacados{
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .flex_a, .flex_b{
+        width: 300px; 
+        margin: 0;
+    }
+    .b{
+        order: -1;
+    }
+
+    .publicacion img{
+        width: 450px;
+    }
+
+    .grid_agenda { 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+          "fecha_uno fecha_dos fecha_tres fecha_cuatro"
+          "fecha_cinco fecha_Seis fecha_siete fecha_ocho "; 
+      }
+      .galeria_cuadros{
+        width: 90%;
+        columns: 5 180px;
+        column-gap: 20px;
+        padding-bottom: 20px;
+      }
+      .cuadros img{
+        width: 300px;
+      }
+      .inicio_presente{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        margin: 0;
+        width: auto;
+      }
+      .formulario{
+        margin-left: 200px;
+      }
+      .from_bc h2{
+        text-align: left;
+        margin-left: 200px;
+      }
 }
 
  
